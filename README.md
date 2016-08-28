@@ -1,6 +1,6 @@
 
 ================================================================================
-				   LICENSE
+##				   LICENSE
 ================================================================================
 
    Automatic Detection of Information Leakage Vulnerabilities in
@@ -23,9 +23,10 @@
 
 
 ================================================================================
-				   INSTALL				
+##				   INSTALL				
 ================================================================================
 This application is tested on:
+```
      Server version: Apache/2.4.10 (Debian)
      Server built:   Nov 28 2015 14:05:48
 
@@ -33,10 +34,11 @@ This application is tested on:
      Copyright (c) 1997-2015 The PHP Group
      Zend Engine v2.6.0, Copyright (c) 1998-2015 Zend Technologies
      with Zend OPcache v7.0.6-dev, Copyright (c) 1999-2015, by Zend Technologies
-
+```
 You need PHP and a webserver:
+```
     $ apt-get install apache2 php
-
+```
 There is no DBMS needed, everything is handled with files.
 The connection is build with cURL, so it has to be installed. This is done in
 Debian with:
@@ -49,19 +51,19 @@ be set in '0_control/control.php' on lines 35 and 36.
    - It is recommended to set it!
    
 An example:
-
+```
     /*
      * Set this manually to filter local IP addresses!
      */
     private $bcast = "192.168.0.255"; 
     private $smask = "255.255.255.0";
-
+```
 
 ================================================================================
-				   OUTPUT				
+##				   OUTPUT				
 ================================================================================
 There is a noGUI version of this application. An output could look like this:
-
+```
 Array
 (
     [0] => {
@@ -115,7 +117,7 @@ Array
     "value": "/path/to/a/file"
 }
 )
-
+```
 Remember, this will be returned and not printed. If you want to test it, you can
 replace the return with e.g. print_r(). Those lines are already written down,
 so that you only have to uncomment line 306 and comment line 307
