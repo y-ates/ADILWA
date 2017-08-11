@@ -1,8 +1,5 @@
 
-================================================================================
-##				   LICENSE
-================================================================================
-
+## LICENSE
    Automatic Detection of Information Leakage Vulnerabilities in
    Web Applications.
    
@@ -22,9 +19,8 @@
    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-================================================================================
-##				   INSTALL				
-================================================================================
+
+## INSTALL				
 This application is tested on:
 ```
      Server version: Apache/2.4.10 (Debian)
@@ -59,9 +55,8 @@ An example:
     private $smask = "255.255.255.0";
 ```
 
-================================================================================
-##				   OUTPUT				
-================================================================================
+
+## OUTPUT
 There is a noGUI version of this application. An output could look like this:
 ```
 Array
